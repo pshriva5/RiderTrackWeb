@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>RiderTrack - Admin</title>
+  <title>RiderTrack - Rider</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -27,6 +27,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profile">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-user-circle"></i>
+            <span class="nav-link-text">Profile</span>
+          </a>
+        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="index.html">
             <i class="fa fa-fw fa-dashboard"></i>
@@ -35,42 +41,27 @@
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="charts.html">
-            <i class="fa fa-fw fa-area-chart"></i>
+            <i class="fa fa-fw fa-trophy"></i>
             <span class="nav-link-text">Events</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">Manage Events</span>
+            <i class="fa fa-fw fa-mobile-phone"></i>
+            <span class="nav-link-text">My Devices</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="navbar.html">Create Event</a>
+              <a href="navbar.html">Current Devices</a>
             </li>
             <li>
-              <a href="cards.html">Edit Event</a>
+              <a href="cards.html">Add Device</a>
             </li>
 			<li>
-              <a href="cards.html">Archive Event</a>
+              <a href="cards.html">Remove Device</a>
             </li>
           </ul>
         </li>
-		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
-            <span class="nav-link-text">User Management</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseComponents2">
-            <li>
-              <a href="navbar.html">Manage Riders</a>
-            </li>
-            <li>
-              <a href="cards.html">Manage Spectator</a>
-            </li>
-          </ul>
-        </li>
-
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
@@ -161,9 +152,75 @@
       </ul>
     </div>
   </nav>
+ 
   <div class="content-wrapper">
     <div class="container-fluid">
       <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">My Profile</a>
+        </li>
+      </ol> 
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Rider1</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="assets/profile1.jpg" class="img-circle img-responsive"> </div>
+                
+                <div class=" col-md-10 col-lg-10 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td><b>Name:</b></td>
+                        <td>Rider1</td>
+                      </tr>
+                      <tr>
+                        <td><b>Age:</b></td>
+                        <td>25</td>
+                      </tr>
+                        <tr>
+                        <td><b>Gender</b></td>
+                        <td>Male</td>
+                        </tr>
+                        <tr>
+                        <td><b>Height and Weight</b></td>
+                        <td>5.6ft, 124lbs</td>
+                      </tr>
+                      </tr>
+                        <tr>
+                        <td><b>Location</b></td>
+                        <td>Tempe, Arizona</td>
+                      </tr>
+                      <tr>
+                        <td><b>Email</b></td>
+                        <td><a>rider1@gmail.com</a></td>
+                      </tr>
+                        <td><b>Phone</b></td>
+                        <td>555-4567-890
+                        </td>    
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  
+                  <a href="#" class="btn btn-primary">Edit Details</a>
+                  <a href="#" class="btn btn-primary">Save Changes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
