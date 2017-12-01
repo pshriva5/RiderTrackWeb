@@ -7,4 +7,6 @@ Web pages for Rider Track
 
 3. Spectator profile page in RiderTrack Spectator-Profile Page/index.html
 
-4. Tracking page in RiderTrack Tracking Page/index.html
+4. Admin dashboard page in RiderTrack Admin Page/index.html
+
+5. Tracking page in RiderTrack Tracking Page/index.html
