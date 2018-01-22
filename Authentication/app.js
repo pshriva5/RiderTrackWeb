@@ -9,7 +9,24 @@ var index = require('./routes/index');
 
 
 var app = express();
+var dbConfig = require('./db.js');
+// var mongoose = require('mongoose');
+// mongoose.connect(dbConfig.url);
+var MongoClient = require('mongodb').MongoClient;
+var passport = require('passport');
+var expressSession = require('express-session');
 
+
+MongoClient.connect(dbConfig.url, function(err, client) {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    client.close();
+});
+
+app.use(expressSession({secret: 'mySecretKey', saveUninitialized: true,
+    resave: true}));
+app.use(passport.initialize());
+app.use(passport.session());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
